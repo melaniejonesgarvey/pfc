@@ -1,0 +1,298 @@
+/* CSS Document */
+
+/* Crew Styles */
+
+/* Color Palette: Taken from Stak Trek's LCARS OS.
+    #ff9900 - gold
+    #ffcc99 - peach
+    #cc99cc - lavendar
+    #9999ff - light blue
+    #cc6061 - mauve
+    #2d2d30 - grey
+    rgba(53, 54, 59, 0.3) - dark grey
+*/
+
+/*
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  background-color: #90FF92;
+}
+
+
+@import "compass/css3";/*https://codepen.io/oknoblich/pen/vfJxr*/
+
+/*
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+*/
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+html, .navbar, body, h1, h2, h3, h4, h5 {
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  font: 400 1.5vw/1.8;
+  /* Bootstrap quirk required to actually make background black. */
+  color: #fff;
+  background: #000;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 1vw;
+  letter-spacing: .5vw;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+  color: #ffcc99 !important;
+}
+
+.navbar-nav li a {
+  letter-spacing: 0.3vw;
+}
+
+.navbar-nav li a:hover {
+  color: #9999ff !important;
+}
+
+.navbar-nav li a:visited {
+  color: #ff9900 !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+
+.navbar-brand:hover {
+  color: #9999ff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* LCARS bars. */
+.bar-1 {
+  float: left;
+  width: 35%; /*add up all the pixels & convert to percentage --- or make one image*/
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-2 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-3 {
+  float: left;
+  width: 10%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-4 {
+  float: left;
+  width: 25%;
+  height: .8vw;
+  margin-top: .6vw;
+  border-radius: .7vw;
+}
+
+.bar-5 {
+  float: left;
+  width: 15%;
+  height: .8vw;
+  margin-top: .6vw;
+  margin-bottom: .6vw;
+  border-radius: .7vw;
+}
+
+/* LCARS bar colors. */
+.lightBlue {
+  background: #9999ff;
+}
+
+.gold {
+  background: #ff9900;
+}
+
+.lavendar {
+  background: #cc99cc;
+}
+
+.peach {
+  background: #ffcc99;
+}
+
+.mauve {
+  background: #cc6061;
+}
+/* End of LCARS bars. */
+
+/*
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+*/
+
+.topBars {
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50vw;
+  margin-left: -25vw;
+  font: 300 3vw/1 "Orbitron", sans-serif;
+  text-align: center;
+  /*
+  text-transform: uppercase;
+  color: #fff;
+  */
+  color: #cc99cc;
+  animation: credits 60s linear infinite;
+  z-index: -1;
+}
+
+.wrapper:hover {
+    -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+    animation-play-state: paused;
+}
+
+/*
+.movie {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+h1, h2 {
+  color: #ff9900;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+    margin: 1vw 0 2.75vw 0;
+    letter-spacing: .6vw;      
+    font-size: 3vw;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+h4 {
+    color: #9999ff;
+    text-align: left;
+    letter-spacing: .6vw;
+}
+
+.job {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.job01 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #ffcd33;
+}
+
+.name {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+*/
+.comments {
+  margin-bottom: .05vw;
+  font-size: 3.5vw;
+  color: #ff9900; /*gold*/
+}
+
+.organization {
+  margin-bottom: .05vw;
+  font-size: 2.5vw;
+  color: #cc99cc; /*lavendar*/
+}
+
+.department {
+  margin-bottom: .05vw;
+  font-size: 2vw;
+  color: #cc6061; /*mauve*/
+}
+
+.role {
+  margin-bottom: .1vw;
+  font-size: 1.75vw;
+  color: #9999ff; /*light blue*/
+}
+
+.name {
+  margin-bottom: .05vw;
+  font-size: 3.5vw;
+  color: #ff9900; /*gold*/
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -600%;
+  }
+}
+
+/*
+media queries
+
+h1{ 
+  font-size: 200%;
+} /* 36px 
+
+h2{ 
+  font-size: 170%;
+} /* 28px 
+
+h3{ 
+  font-size: 130%;
+} /* 22px 
+
+h5{ 
+  font-size: 100%;
+} /* 16px 
+
+ul{
+  list-style: none;
+}
+*/
